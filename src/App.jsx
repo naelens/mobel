@@ -1,13 +1,13 @@
-import styles from './App.module.css'
 import './global.css'
-
-import Header from './components/Header'
+import Router from './Routes'
+import { BrowserRouter } from 'react-router-dom'
 
 export default function App() {
-
   return (
     <>
-      <Header />
+      <BrowserRouter>
+        <Router />
+      </BrowserRouter>
     </>
   )
 }
