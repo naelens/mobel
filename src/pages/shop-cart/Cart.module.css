@@ -1,0 +1,73 @@
+.container {
+    padding: 2rem 4rem;
+}
+
+.cartProduct {
+    display: flex;
+    margin-top: 3rem;
+    gap: 4rem;
+    padding: 1rem;
+    border: 1px solid var(--gray-200);
+    border-left: none;
+    border-right: none;
+}
+
+.productImage {
+    height: 10rem;
+}
+
+.productImage img {
+    width: 10rem;
+}
+
+.productInfo {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 10rem;
+}
+
+.productInfo h2 {
+    margin-top: 1.2rem;
+    font-size: 1rem;
+    color: var(--green-400);
+}
+
+.productInfo p {
+    margin-top: 2rem;
+    font-size: 0.875rem;
+    color: var(--green-400);
+}
+
+.quantityInput {
+    margin-top: 2rem;
+    display: flex;
+    gap: 0.4rem;
+}
+
+.quantityInput input {
+    width: 4rem;
+    border: none;
+}
+
+.quantityInput button {
+    font-weight: 400;
+    border: none;
+    border-radius: 0.2rem;
+    padding: 0.2rem 0.6rem;
+}
+
+.productRemove button {
+    margin-top: 4rem;
+    border: none;
+    background: transparent;
+    padding: 0.2rem;
+    border-radius: 0.2rem;
+}
+
+.productRemove button:hover {
+    color: var(--red);
+    cursor: pointer;
+}
+
+

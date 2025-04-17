@@ -21,6 +21,10 @@ nav {
     align-items: center;
 }
 
+nav a {
+    text-decoration: none;
+}
+
 .shopActions {
     display: flex;
     flex-direction: row;
