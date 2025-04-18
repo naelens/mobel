@@ -7,7 +7,7 @@ export default function Header() {
         <div>
             <header className={styles.header}>
                 <nav>
-                    <Link to="/products">
+                    <Link to="/produtos">
                         <aside className={styles.aside}>
                             <img src="src/assets/logo-mobel.svg" alt="" />
                             <h1>Mobel</h1>
@@ -16,10 +16,10 @@ export default function Header() {
 
                     <ul className={styles.shopActions}>
                         <li>
-                            <Link to="/favorites"><Heart size={24} /></Link>
+                            <Link to="/favoritos"><Heart size={24} /></Link>
                         </li>
                         <li>
-                            <Link to="/cart"><ShoppingCartSimple size={24}/></Link>
+                            <Link to="/carrinho"><ShoppingCartSimple size={24}/></Link>
                         </li>
                     </ul>
                 </nav>
