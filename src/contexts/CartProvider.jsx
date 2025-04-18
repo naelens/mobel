@@ -10,8 +10,15 @@ export function CartProvider(props) {
         console.log("adicionado")
     }
 
+    const RemoveItemFromList = (productId) => {
+        const filteredRemovedItems = item.filter(currentItem => {
+            return currentItem.id !== productId
+        });
+        setItem(filteredRemovedItems); 
+    }
+
     return  (
-        <CartContext.Provider value={{ item, AddItemToCart }}>
+        <CartContext.Provider value={{ item, AddItemToCart, RemoveItemFromList }}>
             {props.children} 
         </CartContext.Provider>
     )
