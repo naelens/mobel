@@ -36,3 +36,7 @@ nav a {
     color: var(--green-300);
 }
 
+.shopActions a:hover {
+    color: var(--yellow);
+}
+

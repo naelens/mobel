@@ -23,6 +23,6 @@
     --red: #E5383B;
 }
 
-body, button {
+body, button, input {
     font-family: "Montserrat", sans-serif;
 }

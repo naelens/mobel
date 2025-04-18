@@ -2,69 +2,106 @@
     padding: 2rem 4rem;
 }
 
-.heading h1 {
+.headingEmptyCart {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    justify-content: center;
+    height: 50vh;
+}
+
+.headingEmptyCart img {
+    width: 10rem;
+}
+
+.headingEmptyCart h1 {
+    color: var(--green-300);
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+.headingEmptyCart a {
+    font-weight: 500;
+    color: var(--yellow);
+}
+
+.headingYourCart h1 {
     color: var(--green-300);
     font-weight: 500;
     font-size: 2rem;
+    margin-bottom: 3rem;
 }
 
 .cartProduct {
     display: flex;
-    margin-top: 3rem;
-    gap: 4rem;
+    gap: 2rem;
     padding: 1rem;
     border: 1px solid var(--gray-200);
     border-left: none;
     border-right: none;
 }
 
+.cartContainer + .cartContainer {
+    margin-top: 1rem;
+}
+
 .productImage {
-    height: 10rem;
+    height: 6rem;
 }
 
 .productImage img {
-    width: 10rem;
+    width: 6rem;
 }
 
 .productInfo {
     display: flex;
+    align-items: center;
+    height: 100%;
     justify-content: space-between;
     width: 100%;
-    height: 10rem;
+    height: 6rem;
 }
 
 .productInfo h2 {
-    margin-top: 1.2rem;
-    font-size: 1rem;
-    color: var(--green-400);
-}
-
-.productInfo p {
-    margin-top: 2rem;
     font-size: 0.875rem;
     color: var(--green-400);
 }
 
+.productInfo p {
+    margin-top: 1rem;
+    font-size: 0.875rem;
+    color: var(--green-400);
+}
+
+.productName {
+    width: 25%;
+}
+
 .quantityInput {
-    margin-top: 2rem;
+    margin-top: 1rem;
     display: flex;
     gap: 0.4rem;
 }
 
 .quantityInput input {
+    font-size: 0.875rem;
     width: 4rem;
     border: none;
 }
 
 .quantityInput button {
+    width: 1.3rem;
     font-weight: 400;
     border: none;
     border-radius: 0.2rem;
-    padding: 0.2rem 0.6rem;
+    font-size: 0.875rem;
 }
 
 .productRemove button {
-    margin-top: 4rem;
+    display: flex;
+    align-items: center;
+    height: 100%;
     border: none;
     background: transparent;
     padding: 0.2rem;
@@ -73,6 +110,47 @@
 
 .productRemove button:hover {
     color: var(--red);
+    cursor: pointer;
+}
+
+.cartTotal {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    margin-top: 2rem;
+    gap: 8px;
+}
+
+.cartTotal span {
+    font-weight: 500;
+    color: var(--green-400);
+}
+
+.cartTotal p {
+    font-weight: 600;
+    color: var(--yellow);
+}
+
+.buttonBuyProduct {
+    display: flex;
+    justify-content: right;
+    flex: 1;
+    margin-top: 4rem;
+}
+
+.buttonBuyProduct button {
+
+    padding: 1rem;
+    font-size: 0.9rem;
+    border: none;
+    border-radius: 6px;
+    background: var(--green-300);
+    color: var(--gray);
+    font-weight: 500;
+}
+
+.buttonBuyProduct button:hover {
+    background: var(--green-400);
     cursor: pointer;
 }
 
