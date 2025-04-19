@@ -8,7 +8,7 @@ export default function Router() {
     return(
         <Routes>
             <Route path="/" element={<DefaultLayout />}>
-                <Route path="/produtos" element={<Products />} />
+                <Route path="/" element={<Products />} />
                 <Route path="/carrinho" element={<Cart />} />
                 <Route path='/favoritos' element={<Favorites />} />
             </Route>
