@@ -79,19 +79,14 @@
 }
 
 .quantityInput {
-    margin-top: 1rem;
     display: flex;
-    gap: 0.4rem;
-}
-
-.quantityInput input {
-    font-size: 0.875rem;
-    width: 4rem;
-    border: none;
+    justify-content: space-between;
 }
 
 .quantityInput button {
-    width: 1.3rem;
+    margin-top: 0.875rem;
+    width: 20px;
+    height: 20px;
     font-weight: 400;
     border: none;
     border-radius: 0.2rem;

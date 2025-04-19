@@ -5,7 +5,7 @@ import { Trash } from 'phosphor-react';
 import styles from './Cart.module.css';
 
 export default function Cart() {
-    const { item, RemoveItemFromList } = useContext(CartContext);
+    const { item, removeItemFromList, inputQuantity, updateItemQuantity } = useContext(CartContext);
 
     return(
         <div className={styles.container}>
@@ -13,7 +13,7 @@ export default function Cart() {
                 <div className={styles.headingEmptyCart}>
                     <img src="src/assets/empty-cart-illustration.svg" alt="Carrinho vazio ilustração" />
                     <h1>Seu carrinho de compras está vazio!</h1>
-                    <Link to={"/produtos"}>Comprar agora.</Link>
+                    <Link to={"/"}>Comprar agora.</Link>
                 </div>
             ) : (
                 <>
@@ -40,12 +40,8 @@ export default function Cart() {
                                                 <h2>Quantidade</h2>
                                                 <div className={styles.quantityInput}>
                                                     <button>-</button>
-                                                        <input 
-                                                            type="number" 
-                                                            value="0" 
-                                                            min="1"
-                                                        />
-                                                    <button>+</button>
+                                                        <p>{inputQuantity}</p>
+                                                    <button onClick={updateItemQuantity}>+</button>
                                                 </div>
                                             </div>
                                             <div className={styles.productTotal}>
@@ -53,7 +49,7 @@ export default function Cart() {
                                                 <p>R$ {product.salePrice}</p>
                                             </div>
                                             <div className={styles.productRemove}>
-                                                <button onClick={() => {RemoveItemFromList(product.id)}}><Trash size={22} /></button>
+                                                <button onClick={() => {removeItemFromList(product.id)}}><Trash size={22} /></button>
                                             </div>  
                                         </div>
                                 </section>

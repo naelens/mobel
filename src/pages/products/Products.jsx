@@ -31,7 +31,7 @@ const products = [
 ]
 
 export default function Products() {
-    const { AddItemToCart } = useContext(CartContext);
+    const { addItemToCart } = useContext(CartContext);
 
     return (
         <div>
@@ -58,7 +58,7 @@ export default function Products() {
                             </div>
 
                             <div className={styles.productsAddToCart}>
-                                <button onClick={() => AddItemToCart(product)} className={styles.buttonAddToCart}>
+                                <button onClick={() => addItemToCart(product)} className={styles.buttonAddToCart}>
                                     Adicionar ao carrinho
                                     <ShoppingCartSimple size={20}/>
                                 </button>
