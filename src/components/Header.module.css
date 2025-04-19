@@ -36,6 +36,22 @@ nav a {
     color: var(--green-300);
 }
 
+.shopActions li {
+    position: relative;
+}
+
+.itemAdded::before {
+    display: block;
+    content: '';
+    width: 6px;
+    height: 6px;
+    border-radius: 100%;
+    background: var(--yellow);
+    right: 0;
+    position: absolute;
+    top: -4px;
+}
+
 .shopActions a:hover {
     color: var(--yellow);
 }
