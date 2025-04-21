@@ -10,6 +10,7 @@ const products = [
         price: 1999.00,
         salePrice: 899.00,
         imageUrl: "src/assets/poltrona.jpg",
+        quantity: 1,
         favorites: false
     },
     {
@@ -18,6 +19,7 @@ const products = [
         price: 2100.00,
         salePrice: 1290.00,
         imageUrl: "src/assets/sofa.webp",
+        quantity: 1,
         favorites: false
     },
     {
@@ -26,6 +28,7 @@ const products = [
         price: 592.99,
         salePrice: 320.00,
         imageUrl: "src/assets/cadeira.webp",
+        quantity: 1,
         favorites: false
     }
 ]
