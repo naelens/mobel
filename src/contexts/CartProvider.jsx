@@ -15,10 +15,10 @@ export function CartProvider(props) {
             console.log("Produto já adicionado no carrinho")
         }
     }
-
-    const removeItemFromList = (productId) => {
+    
+    const removeItemFromList = (productIdToRemove) => {
         const filteredRemovedItems = item.filter(currentItem => {
-            return currentItem.id !== productId
+            return currentItem.id !== productIdToRemove
         });
         setItem(filteredRemovedItems); 
     }
