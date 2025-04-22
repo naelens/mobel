@@ -36,17 +36,6 @@
     color: var(--green-400);
 }
 
-.productsPrimaryInfo button {
-    display: flex;
-    background: none;
-    border: none;
-}
-
-.productsPrimaryInfo button:hover {
-    color: var(--yellow);
-    cursor: pointer;
-}
-
 .productsPrimaryInfo h2 {
     font-weight: 500;
     font-size: 0.975rem;

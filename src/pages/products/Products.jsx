@@ -1,6 +1,6 @@
 import { useContext } from 'react';
 import { CartContext } from '../../contexts/CartProvider';
-import { Heart, ShoppingCartSimple } from 'phosphor-react';
+import { ShoppingCartSimple } from 'phosphor-react';
 import styles from './Products.module.css';
 
 const products = [
@@ -11,7 +11,6 @@ const products = [
         salePrice: 899.00,
         imageUrl: "src/assets/poltrona.jpg",
         quantity: 1,
-        favorites: false
     },
     {
         id: 2,
@@ -20,7 +19,6 @@ const products = [
         salePrice: 1290.00,
         imageUrl: "src/assets/sofa.webp",
         quantity: 1,
-        favorites: false
     },
     {
         id: 3,
@@ -29,7 +27,6 @@ const products = [
         salePrice: 320.00,
         imageUrl: "src/assets/cadeira.webp",
         quantity: 1,
-        favorites: false
     }
 ]
 
@@ -51,7 +48,6 @@ export default function Products() {
                             <div className={styles.productsCardDescription}>
                                 <div className={styles.productsPrimaryInfo}>
                                     <h2>{product.name}</h2>
-                                    <button><Heart size={24} /></button>
                                 </div>
                                 
                                 <div className={styles.productsPrice}>

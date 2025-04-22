@@ -1,4 +1,4 @@
-import { Heart, ShoppingCartSimple } from 'phosphor-react';
+import { ShoppingCartSimple } from 'phosphor-react';
 import { Link } from 'react-router-dom';
 import styles from './Header.module.css';
 import { useContext } from 'react';
@@ -19,9 +19,6 @@ export default function Header() {
                     </Link>
 
                     <ul className={styles.shopActions}>
-                        <li>
-                            <Link to="/favoritos"><Heart size={24} /></Link>
-                        </li>
                         <li className={item.length > 0 ? styles.itemAdded : ''}>
                             <Link to="/carrinho"><ShoppingCartSimple size={24}/></Link>
                         </li>
