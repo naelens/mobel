@@ -1,7 +1,7 @@
 # Simple Shopping Cart Application - Mobel
 ![image](https://github.com/user-attachments/assets/0c021bc7-d79d-4f2f-a98f-e8753b14428c)
 
-🛒This e-commerce was built with React to practice core concepts like:
+## This e-commerce was built with React to practice core concepts like:
 
 ### ⚛️ State Management
 
