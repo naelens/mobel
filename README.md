@@ -35,4 +35,7 @@ Practiced prop drilling avoidance with global state.
 
 Gained confidence in building dynamic UIs.
 
+**Tags**
+**`React`**, **`useContext`**, **`useState`**, **`React Router`**, **`Front-end Practice`**
+
 
