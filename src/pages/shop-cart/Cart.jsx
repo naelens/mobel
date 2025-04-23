@@ -5,7 +5,7 @@ import { Trash } from 'phosphor-react';
 import styles from './Cart.module.css';
 
 export default function Cart() {
-    const { item, removeItemFromList, inputQuantity, updateItemQuantity } = useContext(CartContext);
+    const { item, removeItemFromList, increaseQuantity, decreaseQuantity, calculateTotalPrice, handlePurchaseMadeMessage } = useContext(CartContext);
 
     return(
         <div className={styles.container}>
@@ -39,14 +39,14 @@ export default function Cart() {
                                             <div className={styles.productQuantity}>
                                                 <h2>Quantidade</h2>
                                                 <div className={styles.quantityInput}>
-                                                    <button>-</button>
-                                                        <p>{inputQuantity}</p>
-                                                    <button onClick={updateItemQuantity}>+</button>
+                                                    <button onClick={() => decreaseQuantity(product.id)}>-</button>
+                                                        <p>{product.quantity}</p>
+                                                    <button onClick={() => increaseQuantity(product.id)}>+</button>
                                                 </div>
                                             </div>
                                             <div className={styles.productTotal}>
                                                 <h2>Preço total</h2>
-                                                <p>R$ {product.salePrice}</p>
+                                                <p>R$ {(product.quantity * product.salePrice).toFixed(2)}</p>
                                             </div>
                                             <div className={styles.productRemove}>
                                                 <button onClick={() => {removeItemFromList(product.id)}}><Trash size={22} /></button>
@@ -58,11 +58,11 @@ export default function Cart() {
 
                     <div className={styles.cartTotal}>
                         <span>Valor total da compra: </span>
-                        <p>R$ 1.999,00</p>
+                        <p>R$ {calculateTotalPrice()}</p>
                     </div>
         
                     <div className={styles.buttonBuyProduct}>
-                        <button>Finalizar compra</button>    
+                        <button onClick={handlePurchaseMadeMessage}>Finalizar compra</button>    
                     </div>  
                 </>
             )}
