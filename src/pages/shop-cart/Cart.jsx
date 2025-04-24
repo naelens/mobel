@@ -20,50 +20,60 @@ export default function Cart() {
                     <div className={styles.headingYourCart}>
                         <h1>Seu carrinho</h1>
                     </div>
-                        
-                    {item.map((product, index) => (
+                    
+                    <div className={styles.containerCartPayment}>
+                        {item.map((product, index) => (
                             <div key={index} className={styles.cartContainer}>
                                 <section className={styles.cartProduct}>
-                                        <div className={styles.productImage}>
-                                            <img src={product.imageUrl} />
-                                        </div>
-                                        <div className={styles.productInfo}>
-                                            <div className={styles.productName}>
-                                                <h2>Produto</h2>
-                                                <p>{product.name}</p>
+                                            <div className={styles.productImage}>
+                                                <img src={product.imageUrl} />
                                             </div>
-                                            <div>
-                                                <h2>Preço unitário</h2>
-                                                <p>R$ {product.salePrice}</p>
-                                            </div>
-                                            <div className={styles.productQuantity}>
-                                                <h2>Quantidade</h2>
-                                                <div className={styles.quantityInput}>
-                                                    <button onClick={() => decreaseQuantity(product.id)}>-</button>
-                                                        <p>{product.quantity}</p>
-                                                    <button onClick={() => increaseQuantity(product.id)}>+</button>
+                                            
+                                            <div className={styles.productInfo}>
+                                                <div className={styles.productName}>
+                                                    <h2>{product.name}</h2>
+                                                    <p>R$ {(product.quantity * product.salePrice).toFixed(2)}</p>
+
+                                                    <div className={styles.buttonActions}>
+                                                        <div className={styles.buttonQuantity}>
+                                                            <button onClick={() => decreaseQuantity(product.id)}>-</button>
+                                                                <p>{product.quantity}</p>
+                                                            <button onClick={() => increaseQuantity(product.id)}>+</button>
+                                                        </div>
+                        
+                                                        <div className={styles.productRemove}>
+                                                            <button onClick={() => {removeItemFromList(product.id)}}><Trash size={22} /></button>
+                                                        </div> 
+                                                    </div> 
                                                 </div>
                                             </div>
-                                            <div className={styles.productTotal}>
-                                                <h2>Preço total</h2>
-                                                <p>R$ {(product.quantity * product.salePrice).toFixed(2)}</p>
-                                            </div>
-                                            <div className={styles.productRemove}>
-                                                <button onClick={() => {removeItemFromList(product.id)}}><Trash size={22} /></button>
-                                            </div>  
-                                        </div>
                                 </section>
                             </div>
-                    ))} 
+                        ))}
+                        <section className={styles.checkout}>
+                            <h1>Detalhes do pagamento</h1>
 
-                    <div className={styles.cartTotal}>
-                        <span>Valor total da compra: </span>
-                        <p>R$ {calculateTotalPrice()}</p>
+                            <div className={styles.paymentInfos}>
+                                <div>
+                                    <span>Subtotal: </span>
+                                    <p>R$ {calculateTotalPrice()}</p>
+                                </div>
+                                <div>
+                                    <span>Frete:</span>
+                                    <p>Grátis</p>
+                                </div>              
+                            </div>
+
+                            <div className={styles.cartTotal}>
+                                <span>Valor total: </span>
+                                <p>R$ {calculateTotalPrice()}</p>
+                            </div>
+            
+                            <div className={styles.checkoutButton}>
+                                <button onClick={handlePurchaseMadeMessage}>Finalizar compra</button>    
+                            </div>
+                        </section>
                     </div>
-        
-                    <div className={styles.buttonBuyProduct}>
-                        <button onClick={handlePurchaseMadeMessage}>Finalizar compra</button>    
-                    </div>  
                 </>
             )}
         </div>

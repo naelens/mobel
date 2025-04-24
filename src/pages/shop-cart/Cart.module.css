@@ -1,5 +1,14 @@
 .container {
-    padding: 2rem 4rem;
+    padding: 1.5rem 4rem;
+}
+
+.containerCartPayment {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.cartContainer + .cartContainer {
+    margin-top: 1rem;
 }
 
 .headingEmptyCart {
@@ -40,18 +49,19 @@
     border: 1px solid var(--gray-200);
     border-left: none;
     border-right: none;
-}
-
-.cartContainer + .cartContainer {
-    margin-top: 1rem;
-}
-
-.productImage {
-    height: 6rem;
+    height: 12rem;
+    width: 100%;
 }
 
 .productImage img {
-    width: 6rem;
+    width: 10rem;
+}
+
+.cartContainer {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
 }
 
 .productInfo {
@@ -60,37 +70,41 @@
     height: 100%;
     justify-content: space-between;
     width: 100%;
-    height: 6rem;
-}
-
-.productInfo h2 {
-    font-size: 0.875rem;
-    color: var(--green-400);
-}
-
-.productInfo p {
-    margin-top: 1rem;
-    font-size: 0.875rem;
-    color: var(--green-400);
 }
 
 .productName {
-    width: 25%;
+    width: 100%;
 }
 
-.quantityInput {
+.productInfo h2 {
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.productInfo p {
+    margin-top: 0.4rem;
+    font-size: 0.875rem;
+    color: var(--gray-500);
+}
+
+.buttonActions {
     display: flex;
+    justify-content: space-between;
+    margin-top: 2rem;
+}
+
+.buttonQuantity {
+    display: flex;
+    width: 100px;
     justify-content: space-between;
 }
 
-.quantityInput button {
-    margin-top: 0.875rem;
-    width: 20px;
-    height: 20px;
-    font-weight: 400;
+.buttonQuantity button {
+    width: 1.5rem;
+    height: 1.5rem;
     border: none;
-    border-radius: 0.2rem;
-    font-size: 0.875rem;
+    border-radius: 4px;
+    background: var(--gray);
 }
 
 .productRemove button {
@@ -108,35 +122,75 @@
     cursor: pointer;
 }
 
-.cartTotal {
-    display: flex;
-    justify-content: right;
-    align-items: center;
-    margin-top: 2rem;
-    gap: 8px;
+.checkout {
+    background: var(--white);
+    border-radius: 6px;
+    width: 400px;
+    height: 100%;
+    padding: 2rem 2rem;          
+    width: 100%;
+    margin-top: 3rem;
 }
 
-.cartTotal span {
-    font-weight: 500;
+.checkout h1{
+    font-size: 1rem;
+    font-weight: 600;
     color: var(--green-400);
 }
 
-.cartTotal p {
-    font-weight: 600;
-    color: var(--yellow);
+.paymentInfos {
+    margin-top: 1rem;
 }
 
-.buttonBuyProduct {
+.paymentInfos div {
     display: flex;
-    justify-content: right;
-    flex: 1;
-    margin-top: 4rem;
+    justify-content: space-between;
+    margin-top: 8px;
 }
 
-.buttonBuyProduct button {
+.paymentInfos span {
+    font-size: 0.875rem;
+    color: var(--gray-500);
+}
 
-    padding: 1rem;
-    font-size: 0.9rem;
+.paymentInfos p {
+    font-weight: 500;
+    font-size: 0.875rem;
+    font-weight: (--green-400);
+}
+
+.cartTotal {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2rem;
+    font-weight: 500;
+    font-size: 0.875rem;
+    border-top: 1px solid var(--gray-300);
+}
+
+.cartTotal span {
+    margin-top: 1rem;
+    color: var(--green-500);
+    font-size: 0.875rem;
+}
+
+.cartTotal p {
+    margin-top: 1rem;
+    color: var(--yellow);
+    font-weight: 600;
+    font-size: 0.875rem;
+}
+
+.checkoutButton {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.checkoutButton button {
+    width: 16rem;
+    padding: 0.8rem;
+    font-size: 0.8rem;
     border: none;
     border-radius: 6px;
     background: var(--green-300);
@@ -144,9 +198,7 @@
     font-weight: 500;
 }
 
-.buttonBuyProduct button:hover {
+.checkoutButton button:hover {
     background: var(--green-400);
     cursor: pointer;
 }
-
-
