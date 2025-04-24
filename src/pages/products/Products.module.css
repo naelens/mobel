@@ -20,11 +20,13 @@
 }
 
 .productsCard {
-    width: 20rem;
+    display: flex;
+    flex-direction: column;
+    width: 340px;
 }
 
 .productsCard img {
-    width: 20rem;
+    width: 100%;
     border: 1px solid var(--white);
     border-radius: 0.75rem;
 }
@@ -80,3 +82,32 @@
     background: var(--green-400);
     cursor: pointer;
 }
+
+@media (max-width: 768px) {
+    .productsCard {
+      width: 100%;
+    }
+    
+    .productsArea {
+      justify-content: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .productsHeading h1 {
+        font-size: 1.5rem;
+    }
+
+    .productsPrimaryInfo h2 {
+      font-size: 0.875rem;
+    }
+  
+    .productsPrice p {
+      font-size: 1rem;
+    }
+
+    .buttonAddToCart {
+        padding: 0.875rem;
+        font-size: 0.8rem;
+    }
+  }
