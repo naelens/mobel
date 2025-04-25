@@ -13,7 +13,7 @@ export default function Header() {
                 <nav>
                     <Link to="/">
                         <aside className={styles.aside}>
-                            <img src="src/assets/logo-mobel.svg" alt="" />
+                            <img src="logo-mobel.svg" alt="" />
                             <h1>Mobel</h1>
                         </aside>
                     </Link>

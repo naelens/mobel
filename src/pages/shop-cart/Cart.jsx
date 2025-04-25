@@ -11,7 +11,7 @@ export default function Cart() {
         <div className={styles.container}>
             {item.length === 0 ? (
                 <div className={styles.headingEmptyCart}>
-                    <img src="src/assets/empty-cart-illustration.svg" alt="Carrinho vazio ilustração" />
+                    <img src="empty-cart-illustration.svg" alt="Carrinho vazio ilustração" />
                     <h1>Seu carrinho de compras está vazio!</h1>
                     <Link to={"/"}>Comprar agora.</Link>
                 </div>
