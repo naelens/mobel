@@ -27,6 +27,30 @@ const products = [
         salePrice: 320.00,
         imageUrl: "src/assets/cadeira.webp",
         quantity: 1,
+    },
+    {
+        id: 4,
+        name: "Mesa de cabeceira moderna",
+        price: 161.28,
+        salePrice: 145.00,
+        imageUrl: "src/assets/mesa-de-cabeceira.jpg",
+        quantity: 1,
+    },
+    {
+        id: 5,
+        name: "Estante Home Theather",
+        price: 620.06,
+        salePrice: 574.00,
+        imageUrl: "src/assets/estante.webp",
+        quantity: 1,
+    },
+    {
+        id: 6,
+        name: "Conjunto Mesa de Decoração Star",
+        price: 359.00,
+        salePrice: 312.62,
+        imageUrl: "src/assets/conjunto-mesa-lateral.webp",
+        quantity: 1,
     }
 ]
 
