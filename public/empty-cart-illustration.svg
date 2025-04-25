@@ -1,0 +1,18 @@
+<svg width="122" height="110" viewBox="0 0 122 110" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M15 14H23.8889L37.5 62.5927C37.8464 63.8302 38.592 64.9212 39.6227 65.6987C40.6534 66.4762 41.9125 66.8974 43.2074 66.898H79.8148C81.1104 66.8982 82.3703 66.4773 83.4018 65.6998C84.4332 64.9222 85.1794 63.8308 85.5259 62.5927L95 28.6939H28.0037" stroke="#797979" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M41.6667 86C44.1213 86 46.1111 84.0264 46.1111 81.5918C46.1111 79.1573 44.1213 77.1837 41.6667 77.1837C39.2121 77.1837 37.2222 79.1573 37.2222 81.5918C37.2222 84.0264 39.2121 86 41.6667 86Z" fill="#797979"/>
+<path d="M80.1852 86C82.6398 86 84.6296 84.0264 84.6296 81.5918C84.6296 79.1573 82.6398 77.1837 80.1852 77.1837C77.7306 77.1837 75.7407 79.1573 75.7407 81.5918C75.7407 84.0264 77.7306 86 80.1852 86Z" fill="#797979"/>
+<path d="M74 41C75.1046 41 76 40.1046 76 39C76 37.8954 75.1046 37 74 37C72.8954 37 72 37.8954 72 39C72 40.1046 72.8954 41 74 41Z" fill="#797979"/>
+<path d="M50 41C51.1046 41 52 40.1046 52 39C52 37.8954 51.1046 37 50 37C48.8954 37 48 37.8954 48 39C48 40.1046 48.8954 41 50 41Z" fill="#797979"/>
+<path d="M56 51.5103C56 51.0403 56.3144 50.6284 56.7678 50.5044L60.6712 49.4377C61.7179 49.1516 62.8238 49.1649 63.8633 49.4761L67.2657 50.4945C67.7015 50.6249 68 51.0259 68 51.4807V51.4807C68 52.2087 67.2651 52.7067 66.589 52.4369L63.4495 51.1839C62.6916 50.8815 61.8489 50.8687 61.0823 51.1481L57.3997 52.49C56.7196 52.7378 56 52.2342 56 51.5103V51.5103Z" fill="#797979"/>
+<circle cx="95" cy="27" r="7.5" fill="#797979" fill-opacity="0.95"/>
+<path d="M92.5 27H97.5" stroke="white" stroke-opacity="0.6" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M95 24.5V29.5" stroke="white" stroke-opacity="0.6" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M55 16H59" stroke="#DA983C" stroke-opacity="0.4" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M57 14V18" stroke="#DA983C" stroke-opacity="0.4" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M15 48H19" stroke="#DA983C" stroke-opacity="0.4" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M17 46V50" stroke="#DA983C" stroke-opacity="0.4" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M88 66H92" stroke="#DA983C" stroke-opacity="0.4" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M90 64V68" stroke="#DA983C" stroke-opacity="0.4" stroke-linecap="round" stroke-linejoin="round"/>
+<ellipse opacity="0.3" cx="61" cy="87" rx="57" ry="10" fill="#DA983C" fill-opacity="0.6"/>
+</svg>
