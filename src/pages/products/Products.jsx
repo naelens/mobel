@@ -9,7 +9,7 @@ const products = [
         name: "Poltrona e Puff Base Madeira Menta",
         price: 1999.00,
         salePrice: 899.00,
-        imageUrl: "poltrona.jpg",
+        imageUrl: "/mobel/poltrona.jpg",
         quantity: 1,
     },
     {
@@ -17,7 +17,7 @@ const products = [
         name: "Sofá Viena de Madeira Suede Bege",
         price: 2100.00,
         salePrice: 1290.00,
-        imageUrl: "sofa.webp",
+        imageUrl: "/mobel/sofa.webp",
         quantity: 1,
     },
     {
@@ -25,7 +25,7 @@ const products = [
         name: "Cadeira de escritório Bytes Rosa",
         price: 592.99,
         salePrice: 320.00,
-        imageUrl: "cadeira.webp",
+        imageUrl: "/mobel/cadeira.webp",
         quantity: 1,
     },
     {
@@ -33,7 +33,7 @@ const products = [
         name: "Mesa de cabeceira moderna",
         price: 161.28,
         salePrice: 145.00,
-        imageUrl: "mesa-de-cabeceira.jpg",
+        imageUrl: "/mobel/mesa-de-cabeceira.jpg",
         quantity: 1,
     },
     {
@@ -41,7 +41,7 @@ const products = [
         name: "Estante Home Theather",
         price: 620.06,
         salePrice: 574.00,
-        imageUrl: "estante.webp",
+        imageUrl: "/mobel/estante.webp",
         quantity: 1,
     },
     {
@@ -49,7 +49,7 @@ const products = [
         name: "Conjunto Mesa de Decoração Star",
         price: 359.00,
         salePrice: 312.62,
-        imageUrl: "conjunto-mesa-lateral.webp",
+        imageUrl: "/mobel/conjunto-mesa-lateral.webp",
         quantity: 1,
     }
 ]
